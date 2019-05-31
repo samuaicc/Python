@@ -4,8 +4,8 @@ def output(s,l):
     if l==0:
        return
     else:
-        for i in range(1,l+1):
-            print (s[-i])
+       print (s[l-1])
+       output(s,l-1)
 s = input('Input a string:')
 l = len(s)
 output(s,l)
